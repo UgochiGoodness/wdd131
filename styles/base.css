@@ -27,7 +27,6 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
 }
 
 nav a {
@@ -35,11 +34,11 @@ nav a {
   text-decoration: none;
   padding-right: 100px;
   padding-left: 100px;
-  padding-top: 80px;
+  padding-top: 35px;
 }
 
 nav a:hover {
-  background-color: #0055aa;
+  background-color: #333;
   border-radius: 5px;
 }
 
