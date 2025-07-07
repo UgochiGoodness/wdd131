@@ -124,11 +124,6 @@ main .card:nth-child(3) p {
   grid-row: 2 / 2;
 }
 
-main .card:nth-child(3) img:caption {
-  font-style: italic;
-  font-size: 0.85rem;
-}
-
 
 aside {
   grid-area: aside;
