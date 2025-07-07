@@ -19,8 +19,9 @@ header {
 
 #course-title {
   display: contents;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  padding: 30px;
 }
 
 nav {
