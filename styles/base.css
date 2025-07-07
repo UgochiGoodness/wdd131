@@ -8,6 +8,7 @@ body {
   grid-template-rows: auto 1fr auto;
   color: #333;
   background-color: #f9f9f9;
+  font-family: "Roboto";
 }
 
 header {
@@ -15,6 +16,7 @@ header {
   background-color: #003366;
   color: white;
   text-align: center;
+  padding-top: 25px;
 }
 
 #course-title {
@@ -35,7 +37,7 @@ nav a {
   text-decoration: none;
   padding-right: 100px;
   padding-left: 100px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 15px;
 }
 
@@ -138,7 +140,7 @@ aside.card{
   padding: 1rem;
 }
 
-aside.card h2 {
+aside .card h3 {
   background-color: #003366;
   color: white;
   text-align: center;
