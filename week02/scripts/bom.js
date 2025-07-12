@@ -1,10 +1,10 @@
 // Reference elements
-const input = docuument.querySelector('#favchap');
-const button = docuument.querySelector('button');
-const list = docuument.querySelector('list');
+const input = document.querySelector('#favchap');
+const button = document.querySelector('button');
+const list = document.querySelector('list');
 
-const li = docuument.createElement('li');
-const deleteButton = docuument.createElement('button');
+const li = document.createElement('li');
+const deleteButton = document.createElement('button');
 
 li.textContent = input.value; 
 deleteButton.textContent = '❌' ;
