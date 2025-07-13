@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "header header" "main " "footer footer";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #333;
+  background-color: #f9f9f9;
+  font-family: "Roboto";
+}
+
+header {
+  grid-area: header;
+  background-color: #003366;
+  color: white;
+  text-align: justify;
+  padding-top: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+#hamburgerBtn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none; /* hide menu by default */
+  }
+
+  nav.open a {
+    display: flex; /* show menu when nav has .open class */
+  }
+
+  #hamburgerBtn {
+    display: block;
+ }
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+nav a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 1rem;
+  background-color: #003366;
+  color: white;
+  font-size: 0.9rem;
+}
