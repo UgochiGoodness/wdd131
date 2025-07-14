@@ -1,49 +1,34 @@
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-areas: "header header" "main " "footer footer";
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  color: #333;
-  background-color: #f9f9f9;
-  font-family: "Roboto";
 }
 
 header {
-  grid-area: header;
-  background-color: #003366;
-  color: white;
-  text-align: justify;
-  padding-top: 25px;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-}
 #hamburgerBtn {
-  display: none;
+  display: block;
   font-size: 2rem;
   background: none;
   border: none;
+  color: #fff;
   cursor: pointer;
 }
 
-/* Mobile view */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    display: none; /* hide menu by default */
-  }
+nav {
+  display:flex;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+}
 
-  nav.open a {
-    display: flex; /* show menu when nav has .open class */
-  }
-
-  #hamburgerBtn {
-    display: block;
- }
+nav.open a {
+  display: flex;
 }
 
 nav a {
@@ -51,25 +36,37 @@ nav a {
   text-decoration: none;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  display: block;
 }
 
 nav a:hover {
-  background-color: #333;
-  border-radius: 5px;
+  background-color: #555;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 footer {
   grid-area: footer;
   text-align: center;
   padding: 1rem;
-  background-color: #003366;
+  background-color: #333;
   color: white;
   font-size: 0.9rem;
 }
