@@ -1,4 +1,4 @@
-/* Larger view */
+@media screen and (min-width: 500px) {
 .weather h2::after {
   content: " ⛅";
   margin-left: 0.5rem;
@@ -12,4 +12,5 @@ main {
 
 .weather-icon {
   display: none; /* Hide SVG in large view */
+}
 }
