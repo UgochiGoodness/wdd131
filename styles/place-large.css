@@ -1,0 +1,15 @@
+/* Larger view */
+.weather h2::after {
+  content: " ⛅";
+  margin-left: 0.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.weather-icon {
+  display: none; /* Hide SVG in large view */
+}

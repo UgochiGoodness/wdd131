@@ -11,6 +11,43 @@
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    
+     <header>
+    <h1>Nigeria</h1>
+    <!-- Responsive Hero -->
+    <picture>
+      <source srcset="images/nigeria-hero-large.webp" media="(min-width: 600px)">
+      <source srcset="images/nigeria-hero-medium.webp" media="(min-width: 400px)">
+      <img src="images/nigeria-hero-small.webp" alt="Zuma Rock in Nigeria">
+    </picture>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Data</h2>
+      <p>Area: 923,768km </p>
+      <p>Population: 211 million (as of 2021 estimates) </p>
+      <p>Capital: FCT, Abuja </p>
+      <p>Laguages: Igbo, Hausa, Yoruba and English </p>
+      <p>Currency: Naira </p>
+      <p>Time Zone: GMT (+1) </p>
+      <p>Calling Code: +234 </p>
+      <p>Internet TLD: .ng </p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <p>Temperature: <span id="temp">26</span>°C</p>
+      <p>Wind Speed: <span id="speed">7</span> mph</p>
+      <p>Wind Chill: <span id="chill">N/A</span></p>
+      <!-- In mobile view, show SVG icon -->
+      <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
+    </section>
+  </main>
+
+  <footer>
+       <p>©2025 ♦ Ugochi Goodness Ugorji ♦ Nigeria</p>
+       <p><span id="lastModified" content="currentdate"></span></p>
+  </footer>
+
 </body>
 </html>
