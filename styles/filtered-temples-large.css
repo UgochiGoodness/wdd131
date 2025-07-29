@@ -1,0 +1,7 @@
+/* Larger screen */
+@media (min-width: 700px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+}
