@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #fff;
+  --accent1-color: #333;
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  align-items: center;
+  background-color: #003366;
+  padding: 3px 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+main h1 {
+   text-align: center;
+   color: #333;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
