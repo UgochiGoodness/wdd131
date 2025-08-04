@@ -61,3 +61,49 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
+/* Hide menu button on large screens */
+#menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  nav#navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #003366;
+    text-align: center;
+  }
+
+  nav#navbar a {
+    margin: 10px 0;
+    padding: 10px;
+    display: block;
+  }
+
+  nav#navbar.show {
+    display: flex;
+  }
+
+  header {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 3rem; /* To make space for the hamburger */
+  }
+}
