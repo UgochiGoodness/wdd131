@@ -104,6 +104,6 @@ footer {
     position: relative;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 3rem; /* To make space for the hamburger */
+    padding-top: 2rem; /* To make space for the hamburger */
   }
 }
