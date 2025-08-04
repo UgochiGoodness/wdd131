@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("menuToggle");
     const nav = document.getElementById("navbar");
 
-    toggleButton.addEventListener("click", () => {
-        nav.classList.toggle("show");
-    });
+     if (nav.classList.contains('open')) {
+    hamburgerBtn.textContent = '✖'; // Close symbol
+  } else {
+    hamburgerBtn.textContent = '☰'; // Hamburger symbol
+  }
 });
