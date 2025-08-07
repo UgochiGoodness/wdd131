@@ -1,5 +1,5 @@
-/* Larger screen */
-@media (min-width: 700px) {
+
+@media (max-width: 600px) {
     nav {
         display: flex;
     }
