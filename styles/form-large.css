@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+  form {
+    padding: 1rem 0.5rem;
+  }
+
+  fieldset label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
