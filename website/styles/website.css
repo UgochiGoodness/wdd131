@@ -102,3 +102,50 @@ footer {
     padding-top: 2rem; /* To make space for the hamburger */
   }
 }
+
+/* Employee Profiles */
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.employee {
+  text-align: center;
+  width: 30%;
+}
+
+.employee img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background:#fff;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.submit button {
+  background-color: #003366;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  background-color: #333;
+}
