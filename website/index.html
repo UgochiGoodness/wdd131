@@ -17,16 +17,17 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.jpg" alt="logo">
-        <button id="menuToggle" aria-label="Toggle Menu">☰</button>
-        <nav id="navbar">
-        <a href="about.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
-        </nav>
+      <img src="images/logo.jpg" alt="logo">
+      <button id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      <nav id="navbar" role="navigation">
+         <a href="index.html">Home</a>
+         <a href="services.html">Services</a>
+         <a href="contact.html">Contact Us</a>
+      </nav>
     </header>
-    <main>
-        <h1>About Us</h1>
+
+    <main role="main">
+        <h1>Better future for women</h1>
         <img src="images/workingwoman.jpg" alt="Working woman" loading="lazy">
         <p>Remote WorkHer is an online platform that helps women access remote job opportunities, upskill, and build flexible careers.
         </br>Their target audience includes:</p>
@@ -39,7 +40,7 @@
             <li>Interested in career growth, work–life balance, and financial independence.</li>
            </ul>
     </main>
-    <footer>
+    <footer role="contentinfo">
        <p>©2025 ♦ Ugochi Goodness Ugorji ♦ Nigeria</p>
        <p><span id="lastModified" content="currentdate"></span></p>
     </footer>

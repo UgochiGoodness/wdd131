@@ -17,23 +17,23 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.jpg" alt="logo">
-        <button id="menuToggle" aria-label="Toggle Menu">☰</button>
-        <nav id="navbar">
-        <a href="about.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
-        </nav>
+      <img src="images/logo.jpg" alt="logo">
+      <button id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      <nav id="navbar" role="navigation">
+         <a href="index.html">Home</a>
+         <a href="services.html">Services</a>
+         <a href="contact.html">Contact Us</a>
+      </nav>
     </header>
 
-    <main>
+    <main role="main">
         <section class="Company Information">
         <h2>Send Us a Message</h2>
 
         <p>Remote WorkHer</p>
-        <p>Adress: abc43 Eleme, Port Harcourt, Rivers State </p>
+        <p>Address: abc43 Eleme, Port Harcourt, Rivers State </p>
         <p>Phone Number: 081-874-5461</p>
-        <p>Email: <a href="mailto:">rwh@yahoo.com</a></p>
+        <p>Email: <a href="mailto:rwh@yahoo.com">rwh@yahoo.com</a></p>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127223.16357189347!2d6.922394591214148!3d4.817405491336271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cea39f2c48e3%3A0x53562bdd7d8832db!2sPort%20Harcourt%2C%20Rivers!5e0!3m2!1sen!2sng!4v1743782074043!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -53,7 +53,7 @@
                 <p>Justina Mike - Manager</p>
             </div>
         </section>
-        <section class="Contact Form">
+        <section class="contact-form">
         <form>
             <label for="purpose"><b>Get In Touch</b></label>
             <ul>
@@ -68,13 +68,13 @@
     
             <label for="purpose"><b>Purpose Of Message:</b></label>
             <ul>
-                <li><input type="radio" id="general" name="general" value="General Inquiry">
+                <li><input type="radio" id="general" name="purpose" value="General Inquiry">
                 <label for="general">General Inquiry</label></li>
 
-                <li><input type="radio" id="reservation" name="reservation" value="Reservation Question">
+                <li><input type="radio" id="reservation" name="purpose" value="Reservation Question">
                 <label for="reservation">Reservation Question</label></li>
 
-                <li><input type="radio" id="suggestion" name="suggestion" value="Website Suggestion">
+                <li><input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
                 <label for="suggestion">Website Suggestion</label></li>
             </ul>
             </div>
@@ -88,11 +88,11 @@
             </div>
 
             <button type="submit" class="submit button">Submit Your Inquiry</button>
-        </section>
         </form>
+        </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
        <p>©2025 ♦ Ugochi Goodness Ugorji ♦ Nigeria</p>
        <p><span id="lastModified" content="currentdate"></span></p>
     </footer>

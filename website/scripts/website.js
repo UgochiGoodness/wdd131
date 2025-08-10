@@ -27,3 +27,47 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Store Form Submission
+function storeUserInfo(name, email) {
+    const user = {
+        name: name,
+        email: email
+    };
+
+    localStorage.setItem("userInfo", JSON.stringify(user));
+    console.log(`User info saved: ${user.name}, ${user.email}`);
+}
+
+// Load Stored Info 
+function loadUserInfoFromStorage() {
+    const data = localStorage.getItem("userInfo");
+    if (data) {
+        const user = JSON.parse(data);
+        console.log(`Welcome back, ${user.name}!`);
+    }
+}
+
+// Array + Object + DOM 
+function displayEmployees() {
+    const team = [
+        { name: "Adeife Adeoye", title: "Founder" },
+        { name: "Ugochi Goodness Ugorji", title: "Tech Specialist/Developer" },
+        { name: "Justina Mike", title: "Manager" }
+    ];
+
+    const container = document.querySelector(".employee-profiles");
+    if (!container) return;
+
+    container.innerHTML = ""; // Clear existing
+    team.forEach(member => {
+        const div = document.createElement("div");
+        div.classList.add("employee");
+
+        div.innerHTML = `
+            <img src="images/${member.name.split(" ")[0].toLowerCase()}.jpg" alt="${member.name}" loading="lazy">
+            <p>${member.name} - ${member.title}</p>
+        `;
+        container.appendChild(div);
+    });
+}
